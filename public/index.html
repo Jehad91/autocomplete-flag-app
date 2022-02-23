@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Flagy App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="waviy">
+            <span style="--i:1">Welcome</span>
+            <span style="--i:2">to</span>
+            <span style="--i:3">Flagy</span>
+            <span style="--i:4">App</span>
+        </div>
+        <div class="input-field">
+            <h5 class="center-align">Select A Country <i class="small material-icons">flag</i></h5>
+            <input id="search" class="validate" type="text" placeholder="e.g Palestine"/>
+            <ul id="countryList"></ul>
+        </div>
+        <div class="result">
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg" alt=""> -->
+        </div>
+    </div>
+    <script src="js/autocomplete.js"></script>
+</body>
+</html>

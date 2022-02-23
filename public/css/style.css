@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+/* scrollbar Style */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 15px;
+  background-color: #ffeaa7;
+  height: 100vh;
+  overflow: hidden;
+}
+ul {
+  list-style-type: none;
+}
+.waviy {
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #05c46b;
+}
+@media (max-width: 567px) {
+  .waviy {
+    font-size: 1.3rem;
+  }
+}
+.waviy span {
+  font-family: "Alfa Slab One", cursive;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+}
+h5 {
+  display: flex;
+  align-items: end;
+  font-size: 18px;
+  color: #e17055;
+}
+h5 > i {
+  color: #636e72;
+  transform: rotate(20deg);
+}
+.input-field {
+  margin: auto;
+  max-width: 400px;
+  position: relative;
+}
+.input-field input {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #44bd32;
+}
+#countryList {
+  position: absolute;
+  top: 69px;
+  left: 0;
+  right: 0;
+  border: 1px solid transparent;
+  max-height: 400px;
+  overflow-y: scroll;
+  z-index: 1;
+}
+#countryList > li {
+  padding: 12px;
+  background-color: white;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+#countryList > li:hover {
+  background-color: #f1f1f1;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1.3rem;
+}
+.result h2 {
+  color: #485460;
+}
+.result h2.capital {
+  color: #e17055;
+  font-size: 18px;
+}
+.result h2.capital > span {
+  color: #485460;
+}
+.result img {
+  max-width: 100%;
+  width: 400px;
+  max-height: 250px;
+  border-radius: 30px;
+}

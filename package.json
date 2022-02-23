@@ -1,0 +1,30 @@
+{
+  "name": "autocomplete-team3",
+  "version": "1.0.0",
+  "description": "A simple web page to search about your country flag",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G11/autocomplete-team3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G11/autocomplete-team3/issues"
+  },
+  "homepage": "https://github.com/GSG-G11/autocomplete-team3#readme",
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  },
+  "dependencies": {
+    "env2": "^2.2.2"
+  }
+}
